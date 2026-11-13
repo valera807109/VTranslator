@@ -44,7 +44,8 @@ hdiutil create -volname "$APP_NAME" -srcfolder "$STAGE" -ov -format UDZO "$DIST/
 rm -rf "$STAGE"
 
 echo "==> ZIP"
-(cd "$DIST" && ditto -c -k --keepParent "$APP_NAME.app" "$APP_NAME-$VERSION.zip")
+# Имя без версии — для постоянной ссылки releases/latest/download/VTranslator.zip (её использует install.sh).
+(cd "$DIST" && ditto -c -k --keepParent "$APP_NAME.app" "$APP_NAME.zip")
 
 ls -la "$DIST"
 echo "Готово."

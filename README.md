@@ -31,7 +31,13 @@
 
 ## Установка
 
-См. [docs/INSTALL.txt](docs/INSTALL.txt). Коротко: перенести в «Программы», выполнить `xattr -cr /Applications/VTranslator.app`, разрешить «Универсальный доступ».
+Одной командой в «Терминале» (без предупреждений macOS, ею же обновляется):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/valera807109/VTranslator/main/scripts/install.sh | bash
+```
+
+Или вручную из `.dmg` — см. [docs/INSTALL.txt](docs/INSTALL.txt). После установки разрешите «Универсальный доступ».
 
 ## Требования
 

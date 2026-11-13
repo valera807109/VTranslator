@@ -131,7 +131,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     private var noSelectionMessage: String {
         SelectionService.isTrusted
             ? "Не удалось получить выделенный текст. Выделите текст и нажмите сочетание ещё раз."
-            : "Нет доступа к выделенному тексту. Разрешите VTranslator в «Системные настройки → Конфиденциальность и безопасность → Универсальный доступ»."
+            : "Нет доступа к выделенному тексту.\n\nОткройте «Системные настройки → Конфиденциальность и безопасность → Универсальный доступ». Если VTranslator уже есть в списке — выделите его, удалите кнопкой «–» и добавьте заново кнопкой «+» (Программы → VTranslator). Если его нет — включите переключатель напротив VTranslator."
     }
 
     private func translateSelectionInPopup() {

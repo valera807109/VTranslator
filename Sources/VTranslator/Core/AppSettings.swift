@@ -99,7 +99,7 @@ final class AppSettings: ObservableObject {
         historyEnabled = d.object(forKey: "historyEnabled") as? Bool ?? true
         historyLimit = d.object(forKey: "historyLimit") as? Int ?? 500
         ttsProvider = TTSProvider(rawValue: d.string(forKey: "ttsProvider") ?? "") ?? .google
-        clipboardFallback = d.object(forKey: "clipboardFallback") as? Bool ?? true
+        clipboardFallback = d.object(forKey: "clipboardFallback") as? Bool ?? false
 
         hotkeys = Self.loadHotkeys(d)
         doubleTapKey = DoubleTapKey(rawValue: d.string(forKey: "doubleTapKey") ?? "") ?? .control
